@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 
+
 let apiUrl = "https://api.nytimes.com/svc/topstories/v2";
 let apiKey = "ptSlPRliLYsVadkaLMQEbU07GIhUzDAr";
 let type ="world.json";
@@ -14,11 +15,13 @@ function News() {
   }, []);
 
   return (
-    news && news.results.splice(0,5).map((article, index) => {
+    news && news.results.splice(0,4).map((article, index) => {
       return (
       <article key={article.url}>
         <img alt={index} height="100px" src={article.multimedia[0].url} />
-        <a href={article.url}>{article.title}</a> 
+
+        <div  > <a href={article.url}>{article.title}</a> </div>
+       
       </article>
       )
     })
