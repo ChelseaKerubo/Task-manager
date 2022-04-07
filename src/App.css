@@ -4,6 +4,7 @@ main {
   max-width: 100%;
   margin: 0 auto;
   padding: 32px;
+  background-color: antiquewhite;
   color: #333;
 }
 
