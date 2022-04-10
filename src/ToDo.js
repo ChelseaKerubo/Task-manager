@@ -43,6 +43,7 @@ function TodosComponent() {
       <input
         className="todo-input"
         value={currentTodo}
+        id ="searchid"
         onChange={e => {
           setCurrentTodo(e.target.value);
         }}

@@ -13,7 +13,7 @@ function App() {
     <section>
       <div>
         <h3>Latest headlines</h3>
-        <div><News/></div>
+        <div class="news"><News/></div>
       </div>
       <div>
         <h3>Today's Agenda</h3>
